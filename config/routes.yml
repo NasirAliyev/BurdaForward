@@ -1,0 +1,15 @@
+routes:
+  - path: /blog/{year}/{month}/{day}
+    types:
+      year: \d{4}
+      month: \d{2}
+      day: \d{2}
+    controller: BlogController
+    action: index
+    methods:
+      - GET
+  - path: /
+    controller: MainController
+    action: index
+    methods:
+      - GET

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task for BurdaForward</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .task-description {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        ul li {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Task for Senior Backend Engineer at BurdaForward</h1>
+    <div class="task-description">
+        <p><strong>TASK:</strong> Please code a small PHP Framework on your own with the following requirements:</p>
+        <ul>
+            <li>
+                File based configuration for a Router component that can interpret parameterized routes e.g. /blog/{year}/{month}/{day} with default values and regex based type definitions like \d+
+
+                <p>Example link: <a href="/blog/2023/02/03">/blog/2023/02/03</a></p>
+            </li>
+            <li>Based on the route configuration a controller should be invoked with a defined action and the related route params are passed as arguments</li>
+            <li>The output of your controllers should be rendered by a template engine. You can decide which one to use.</li>
+            <li>Write unit tests for your components</li>
+            <li>Prepare a webserver configuration to be able to server the application</li>
+            <li>Create a handover document which describes how the application can be used in the browser and how the tests can be executed</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

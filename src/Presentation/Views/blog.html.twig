@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <style>
+        .blog-post {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .title {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .date {
+            font-size: 14px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+<article class="blog-post">
+    <h2 class="title">{{ title }}</h2>
+    <p class="description">{{ description }}</p>
+    <span class="date">Created: {{ date|date("F j, Y") }}</span>
+</article>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+version: "3.7"
+
+services:
+
+  main:
+    build:
+      context: .
+      dockerfile: config/docker/Dockerfile
+    restart: unless-stopped
+    working_dir: /var/www/html
+    env_file:
+      - .env
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - burda
+
+  nginx:
+    image: nginx
+    restart: unless-stopped
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+      - ./config/docker/nginx/:/etc/nginx/conf.d/
+    ports:
+      - ${APP_PORT}:80
+    networks:
+      - burda
+
+networks:
+  burda:
+    driver: bridge

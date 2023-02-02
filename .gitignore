@@ -1,0 +1,10 @@
+.env
+/vendor/
+.phpunit.result.cache
+/phpunit.xml
+.phpunit.result.cache
+
+/.phpcs-cache
+/phpcs.xml
+
+./.idea
